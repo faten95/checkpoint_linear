@@ -1,0 +1,17 @@
+ALGORITHM prob1_solution1
+VAR
+tab : ARRAY_OF INTEGER[50];
+tab2 : ARRAY_OF INTEGER[50];
+i,j,sum : INTEGER;
+  
+BEGIN
+sum := 0;
+   FOR i FROM 0 TO tab.length-1 STEP 1  DO
+   FOR j FROM 0 TO tab2.length-1 STEP 1  DO
+    IF (tab[i] <> tab2[j]) THEN
+   sum := sum + tab[i] ;
+END_IF
+END_FOR
+END_FOR
+   Write(sum);
+END
